@@ -1,0 +1,5 @@
+Write down how you approached the project. I looked up morse code mappings and had GPT generate me a dictionary mapping.
+What was hard, what was easy.  Nothing was hard really it was easy.
+How might you improve for the next project?
+What was your biggest learning from today?  I learned to anticipate problems like KeyErrors and stuffs before they happened.
+What would you do differently if you were to tackle this project again?
