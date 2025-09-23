@@ -46,7 +46,7 @@ def convert_to_text(morse_code):
         try:
             return reverse_morse_code_mapping[morse_code]
         except KeyError:
-            return "Invalid Morse code"
+            return f' {morse_code}'
     else:
         position_of_pipe, position_of_slash = check_for(morse_code, "|"), check_for(morse_code, "\\")
         if position_of_pipe is not None and position_of_slash is not None:
