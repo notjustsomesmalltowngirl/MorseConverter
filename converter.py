@@ -58,16 +58,15 @@ def convert_to_text(morse_code):
         else:
             slice_pos = None
         try:
+            plain_text += f"{convert_to_text(morse_code[:slice_pos])}"
             if slice_pos == position_of_slash:
-                plain_text += f"{convert_to_text(morse_code[:slice_pos])} "
-            else:
-                plain_text += f"{convert_to_text(morse_code[:slice_pos])}"
+                plain_text += " "  # add a space for slashes
             morse_code = morse_code[(slice_pos+1):]
             plain_text += convert_to_text(morse_code)
         except IndexError:
             return
 
-    return plain_text.lower()
+    return plain_text.capitalize()
 
 def check_for(string, char):
     try:
